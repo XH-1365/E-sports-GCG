@@ -333,11 +333,8 @@ void OLED_Init(void)
 	OLED_WR_Byte(0xB0,OLED_CMD);//--set page address
 	OLED_WR_Byte(0x81,OLED_CMD); // contract control
 	OLED_WR_Byte(0xFF,OLED_CMD);//--128   
-	
 	OLED_WR_Byte(0xA1,OLED_CMD);//set segment remap 
-	
 	OLED_WR_Byte(0xA6,OLED_CMD);//--normal / reverse
-	
 	OLED_WR_Byte(0xA8,OLED_CMD);//--set multiplex ratio(1 to 64)
 	OLED_WR_Byte(0x3F,OLED_CMD);//--1/32 duty
 	OLED_WR_Byte(0xC8,OLED_CMD);//Com scan direction

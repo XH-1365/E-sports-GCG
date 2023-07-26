@@ -19,9 +19,13 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
+#include "tim.h"
 #include "gpio.h"
 
-#include "oled.h"
+
+#include "u8g2.h"
+#include "stm32_u8g2.h"
+#include "test.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -88,18 +92,26 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_I2C1_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-	OLED_Init();
-	OLED_Clear();
-  /* USER CODE END 2 */
-	
+	u8g2_t u8g2;
+	u8g2Init(&u8g2);
+	u8g2_FirstPage(&u8g2);
+	do
+	{
+		draw(&u8g2);
+
+		u8g2DrawTest(&u8g2);
+	} while (u8g2_NextPage(&u8g2));
+	/* USER CODE END 2 */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
-		OLED_ShowChar(1,1,'1',0);	
 
+		
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

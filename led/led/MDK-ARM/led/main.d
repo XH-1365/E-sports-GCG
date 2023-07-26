@@ -26,7 +26,14 @@ led\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 led\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 led\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 led\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+led\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+led\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 led\main.o: ../Core/Inc/i2c.h
+led\main.o: ../Core/Inc/tim.h
 led\main.o: ../Core/Inc/gpio.h
-led\main.o: .\HARDWARE\OLED\oled.h
-led\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+led\main.o: ../../../u8g2-master/u8g2-master/csrc/u8g2.h
+led\main.o: ../../../u8g2-master/u8g2-master/csrc/u8x8.h
+led\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+led\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+led\main.o: ../../../u8g2-master/u8g2-master/csrc/stm32_u8g2.h
+led\main.o: ..\MDK-ARM\test.h
