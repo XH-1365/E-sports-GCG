@@ -1,0 +1,11 @@
+led\delay.o: HARDWARE\delay\delay.c
+led\delay.o: HARDWARE\delay\delay.h
+led\delay.o: .\HARDWARE\sys\sys.h
+led\delay.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h
+led\delay.o: .\RTE\_led\RTE_Components.h
+led\delay.o: ../Drivers/CMSIS/Include/core_cm3.h
+led\delay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+led\delay.o: ../Drivers/CMSIS/Include/cmsis_version.h
+led\delay.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+led\delay.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+led\delay.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h
