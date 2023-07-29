@@ -121,7 +121,7 @@ static uint8_t u8x8_d_st7528_generic(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int,
       u8x8_d_helper_display_init(u8x8);
       u8x8_cad_SendSequence(u8x8, u8x8_d_st7528_nhd_c160100_init_seq);    
     */
-      break;
+      //break;
     case U8X8_MSG_DISPLAY_SET_POWER_SAVE:
       if ( arg_int == 0 )
 	u8x8_cad_SendSequence(u8x8, u8x8_d_st7528_powersave0_seq);

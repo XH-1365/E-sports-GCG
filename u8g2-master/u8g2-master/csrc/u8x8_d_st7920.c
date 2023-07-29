@@ -370,3 +370,4 @@ uint8_t u8x8_d_st7920_256x32(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *a
   }
   return 1;
 }
+

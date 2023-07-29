@@ -22,8 +22,6 @@
 #include "tim.h"
 #include "gpio.h"
 
-
-#include "u8g2.h"
 #include "stm32_u8g2.h"
 #include "test.h"
 /* Private includes ----------------------------------------------------------*/
@@ -63,6 +61,7 @@ void SystemClock_Config(void);
 
 /* USER CODE END 0 */
 
+
 /**
   * @brief  The application entry point.
   * @retval int
@@ -97,21 +96,13 @@ int main(void)
 	u8g2_t u8g2;
 	u8g2Init(&u8g2);
 	u8g2_FirstPage(&u8g2);
-	do
-	{
-		draw(&u8g2);
-
-		u8g2DrawTest(&u8g2);
-	} while (u8g2_NextPage(&u8g2));
-	/* USER CODE END 2 */
-
+  /* USER CODE END 2 */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
-
-		
+		u8g2DrawTest(&u8g2);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

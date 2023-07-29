@@ -252,3 +252,4 @@ void u8x8_ConnectCapture(u8x8_t *u8x8, uint8_t tile_width, uint8_t tile_height, 
 }
 
 #endif
+
