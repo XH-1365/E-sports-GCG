@@ -96,12 +96,14 @@ int main(void)
 	u8g2_t u8g2;
 	u8g2Init(&u8g2);
 	u8g2_FirstPage(&u8g2);
+
   /* USER CODE END 2 */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
+	
 		u8g2DrawTest(&u8g2);
     /* USER CODE BEGIN 3 */
   }
