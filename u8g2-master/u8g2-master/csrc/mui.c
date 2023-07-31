@@ -90,7 +90,6 @@ uint8_t mui_get_fds_char(fds_t *s)
   return (uint8_t)mui_pgm_read(s);
 }
 
-
 /*
   s must point to a valid command within FDS
 */

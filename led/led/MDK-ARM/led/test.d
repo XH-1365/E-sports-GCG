@@ -1,5 +1,5 @@
-led\test.o: test.c
-led\test.o: test.h
+led\test.o: Show proc\test.c
+led\test.o: Show proc\test.h
 led\test.o: ../Core/Inc/main.h
 led\test.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 led\test.o: ../Core/Inc/stm32f1xx_hal_conf.h

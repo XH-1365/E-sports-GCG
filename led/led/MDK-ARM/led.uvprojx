@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;./HARDWARE/OLED;./HARDWARE/delay;./HARDWARE/sys;../../../u8g2-master/u8g2-master/csrc;../MDK-ARM</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;./HARDWARE/OLED;./HARDWARE/delay;./HARDWARE/sys;../../../u8g2-master/u8g2-master/csrc;../MDK-ARM;.\Show proc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -390,12 +390,22 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Application/User/Core</GroupName>
+          <GroupName>Show</GroupName>
           <Files>
             <File>
               <FileName>test.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\test.c</FilePath>
+              <FilePath>.\Show proc\test.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Application/User/Core</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/main.c</FilePath>
             </File>
             <File>
               <FileName>mui.c</FileName>
@@ -406,11 +416,6 @@
               <FileName>stm32_u8g2.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\u8g2-master\u8g2-master\csrc\stm32_u8g2.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/main.c</FilePath>
             </File>
             <File>
               <FileName>gpio.c</FileName>

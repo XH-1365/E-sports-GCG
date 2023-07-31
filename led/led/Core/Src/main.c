@@ -22,11 +22,12 @@
 #include "tim.h"
 #include "gpio.h"
 
-#include "stm32_u8g2.h"
 #include "test.h"
+#include "stm32_u8g2.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+char ui_list = 0;//列表位置确认
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,11 +57,25 @@ void SystemClock_Config(void);
 
 /* USER CODE END PFP */
 
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if(HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_13) == 0)
+	{
+
+		up_key();
+	}
+	
+	else if(HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_1) == 0)
+	{
+//		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,1 - HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_8));
+		down_key();
+	}
+}
+
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
-
 
 /**
   * @brief  The application entry point.
@@ -96,15 +111,14 @@ int main(void)
 	u8g2_t u8g2;
 	u8g2Init(&u8g2);
 	u8g2_FirstPage(&u8g2);
-
   /* USER CODE END 2 */
+	u8g2Dra_init(&u8g2);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
-	
-		u8g2DrawTest(&u8g2);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

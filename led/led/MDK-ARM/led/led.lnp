@@ -1,9 +1,9 @@
 --cpu Cortex-M3
 "led\startup_stm32f103xe.o"
 "led\test.o"
+"led\main.o"
 "led\mui.o"
 "led\stm32_u8g2.o"
-"led\main.o"
 "led\gpio.o"
 "led\i2c.o"
 "led\tim.o"
