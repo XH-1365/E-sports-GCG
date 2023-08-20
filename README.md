@@ -1,7 +1,7 @@
 <!-- 标题 -->
 # Hello! OLED! Hello! Embedded！ 
-<font color=red> A STM32-HAL in the Written By little yellow  </font>
-
+### A STM32-HAL in the Written By little yellow
+![alt text] 
 <!-- 正文 -->
 这是一个关于oled的程序的编写  
 
@@ -14,7 +14,7 @@
   
 ## 目前更新进度
 
-7/26:更新中景园库i2c显示屏  
+7/26:  
  
 7/27:更新u8g2 i2c显示屏移植,还未有ui,顺便更新加入PCtoLCD软件  
  
@@ -22,8 +22,4 @@
  
 7/31:更新u8g2 个人ui显示BUG功能修复完成，可以正常显示移动,未添加长按键位以及进入界面,后续更新
   
-. 
 
-. 
-
-. 
