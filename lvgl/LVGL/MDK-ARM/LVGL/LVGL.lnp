@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"lvgl\startup_stm32f103xe.o"
+"lvgl\main.o"
+"lvgl\stm32f1xx_it.o"
+"lvgl\stm32f1xx_hal_msp.o"
+"lvgl\stm32f1xx_hal_gpio_ex.o"
+"lvgl\stm32f1xx_hal_tim.o"
+"lvgl\stm32f1xx_hal_tim_ex.o"
+"lvgl\stm32f1xx_hal.o"
+"lvgl\stm32f1xx_hal_rcc.o"
+"lvgl\stm32f1xx_hal_rcc_ex.o"
+"lvgl\stm32f1xx_hal_gpio.o"
+"lvgl\stm32f1xx_hal_dma.o"
+"lvgl\stm32f1xx_hal_cortex.o"
+"lvgl\stm32f1xx_hal_pwr.o"
+"lvgl\stm32f1xx_hal_flash.o"
+"lvgl\stm32f1xx_hal_flash_ex.o"
+"lvgl\stm32f1xx_hal_exti.o"
+"lvgl\system_stm32f1xx.o"
+"lvgl\lv_port_disp_template.o"
+"lvgl\lv_port_fs_template.o"
+"lvgl\lv_port_indev_template.o"
+--strict --scatter "LVGL\LVGL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LVGL.map" -o LVGL\LVGL.axf
