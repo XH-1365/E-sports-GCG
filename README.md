@@ -1,7 +1,6 @@
 <!-- 标题 -->
 # Hello! OLED! Hello! Embedded！ 
-
-## A STM32-HAL in the Written By little yellow 
+A STM32-HAL in the Written By little yellow 
 
 <!-- 正文 -->
 这是一个关于oled的程序的编写  
